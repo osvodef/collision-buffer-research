@@ -1,0 +1,33 @@
+{
+  "name": "collision-buffer-research",
+  "version": "1.0.0",
+  "description": "Performance tests of different implementations of collision detection",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --env.production",
+    "lint": "tslint -p tsconfig.json 'src/**/*.ts'"
+  },
+  "author": "Alex Fedosov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RLRR/collision-buffer-research.git"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@types/benchmark": "^1.0.31",
+    "@types/rbush": "^2.0.2",
+    "benchmark": "^2.1.4",
+    "rbush": "^2.0.2"
+  }
+}
